@@ -3,10 +3,11 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Icons } from "./Icons";
 import { buttonVariants } from "./ui/button";
 import { cookies } from "next/headers";
+import NavItems from "./NavItems";
 
 const Navbar = async () => {
   const nextCookies = cookies();
-
+  
   return (
     <div className="bg-white sticky z-50 top-0 inset-x-0 h-16">
       <header className="relative bg-white">
@@ -20,7 +21,7 @@ const Navbar = async () => {
               </div>
 
               <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">
-                {/* <NavItems /> */}
+                <NavItems />
               </div>
 
               <div className="ml-auto flex items-center">
